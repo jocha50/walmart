@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Walmart</string>
+    <string name="walmart_item_id">Walmart item #: %s </string>
+    <string name="product_color">Color: %s </string>
     <string name="forgot"><a href="#">Forgot password?</a></string>
 
 </resources>

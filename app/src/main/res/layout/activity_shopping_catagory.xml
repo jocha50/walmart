@@ -42,7 +42,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         tools:src="@drawable/electronics"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/electronics" />
 
     <ImageButton
         android:id="@+id/clothing"

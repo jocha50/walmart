@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Walmart">
         <activity
+            android:name=".ProductDetailView"
+            android:exported="false" />
+        <activity
+            android:name=".DetailedView"
+            android:exported="false" />
+        <activity
             android:name=".CreateAccount"
             android:exported="false" />
         <activity

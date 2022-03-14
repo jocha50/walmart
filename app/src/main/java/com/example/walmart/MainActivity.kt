@@ -1,18 +1,14 @@
 package com.example.walmart
 
-import User
+import model.User
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.core.app.ShareCompat
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_main.view.*
-import kotlinx.android.synthetic.main.activity_shopping_catagory.*
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -65,7 +61,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         if (valid) {
-            println("call intent")
             var intent = Intent(this, ShoppingCatagory::class.java)
             intent.putExtra("user", memberToSignIn?.userName)
             startActivity(intent)

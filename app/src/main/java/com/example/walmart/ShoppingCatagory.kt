@@ -1,5 +1,6 @@
 package com.example.walmart
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -29,7 +30,10 @@ class ShoppingCatagory : AppCompatActivity() {
 //    }
 
     fun electronics(view : View){
-                Toast.makeText(this,"You have chosen the Electronics category of shopping",Toast.LENGTH_LONG).show()
+//                Toast.makeText(this,"You have chosen the Electronics category of shopping",Toast.LENGTH_LONG).show()
+        var intent = Intent(this, DetailedView::class.java)
+        intent.putExtra("id", view.id)
+        startActivity(intent)
     }
     fun clothing(view : View){
         Toast.makeText(this,"You have chosen the Clothing category of shopping",Toast.LENGTH_LONG).show()
